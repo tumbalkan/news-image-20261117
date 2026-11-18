@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — 17 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; }
+  body {
+    font-family: "Noto Serif", "DejaVu Serif", Georgia, serif;
+    background: #f8f4e8;
+    color: #161616;
+    padding: 22px 26px 18px 26px;
+  }
+  /* ---------- top dateline ---------- */
+  .dateline {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+    color: #444; border-bottom: 1px solid #161616; padding-bottom: 6px;
+  }
+  .dateline .price { letter-spacing: 1px; }
+  /* ---------- masthead ---------- */
+  .masthead {
+    text-align: center; padding: 8px 0 4px 0;
+    border-bottom: 4px double #161616;
+  }
+  .masthead h1 {
+    font-size: 66px; line-height: 1; font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .masthead .tagline {
+    font-family: "Noto Sans", sans-serif; font-size: 12px;
+    letter-spacing: 4px; text-transform: uppercase; color: #555;
+    margin-top: 2px;
+  }
+  /* ---------- date banner ---------- */
+  .datebar {
+    background: #161616; color: #fff; text-align: center;
+    font-family: "Noto Sans", sans-serif; font-weight: 800;
+    font-size: 30px; letter-spacing: 6px; padding: 8px 0; margin: 10px 0 12px 0;
+  }
+  .datebar span { color: #f2c94c; }
+  /* ---------- lead story ---------- */
+  .lead { border-bottom: 2px solid #161616; padding-bottom: 10px; }
+  .kicker {
+    font-family: "Noto Sans", sans-serif; font-weight: 800; font-size: 15px;
+    letter-spacing: 3px; color: #a31621; text-transform: uppercase;
+  }
+  .lead h2 {
+    font-size: 49px; line-height: 1.02; font-weight: 900; margin: 4px 0 6px 0;
+  }
+  .lead-row { display: flex; gap: 16px; }
+  .lead-art { flex: 0 0 472px; }
+  .lead-art figcaption {
+    font-family: "Noto Sans", sans-serif; font-size: 11px; color: #555;
+    margin-top: 3px; font-style: italic;
+  }
+  .lead-text { flex: 1; }
+  .lead-text .deck {
+    font-size: 19px; line-height: 1.35; font-weight: 700; color: #222;
+  }
+  .lead-text p {
+    font-size: 14.5px; line-height: 1.45; margin-top: 8px; color: #333;
+    text-align: justify;
+  }
+  .hormuz {
+    margin-top: 9px; background: #efe6d2; border-left: 4px solid #a31621;
+    padding: 7px 10px;
+    font-family: "Noto Sans", sans-serif; font-size: 13px; line-height: 1.4;
+  }
+  .hormuz b { color: #a31621; }
+  /* ---------- grid ---------- */
+  .grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto; gap: 0;
+    margin-top: 10px; border-bottom: 2px solid #161616; padding-bottom: 10px;
+  }
+  .cell { padding: 8px 12px 8px 0; border-right: 1px solid #bbb; }
+  .cell:nth-child(3n) { border-right: none; padding-right: 0; }
+  .cell:nth-child(n+4) { border-top: 1px solid #bbb; }
+  .cell:nth-child(3n+2), .cell:nth-child(3n+5) { padding-left: 12px; }
+  .cell:nth-child(3n) { padding-left: 12px; }
+  .cell .icon { float: left; margin: 2px 8px 2px 0; }
+  .cell .tag {
+    font-family: "Noto Sans", sans-serif; font-size: 11px; font-weight: 800;
+    letter-spacing: 2px; color: #1d4e89; text-transform: uppercase;
+  }
+  .cell h3 { font-size: 20px; line-height: 1.12; font-weight: 900; margin: 2px 0 4px 0; }
+  .cell p { font-size: 13.5px; line-height: 1.38; color: #333; }
+  /* ---------- bottom strip ---------- */
+  .strip {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px;
+    margin-top: 10px;
+  }
+  .strip.three { grid-template-columns: 1fr 1fr 1fr; margin-top: 9px; padding-top: 9px; border-top: 1px solid #bbb; }
+  .strip.three .item .sq { background: #1d4e89; }
+  .strip .item { font-family: "Noto Sans", sans-serif; }
+  .strip .item .sq {
+    display: inline-block; width: 9px; height: 9px; background: #a31621;
+    margin-right: 6px;
+  }
+  .strip .item h4 { font-size: 14.5px; line-height: 1.3; font-weight: 800; display: inline; }
+  .strip .item p { font-size: 12.5px; line-height: 1.35; color: #444; margin-top: 3px; }
+  /* ---------- footer ---------- */
+  .footer {
+    margin-top: 10px; padding-top: 7px; border-top: 2px solid #161616;
+    font-family: "Noto Sans", sans-serif; font-size: 12px; font-weight: 700; color: #333;
+    display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+  <div class="dateline">
+    <span>Tuesday</span>
+    <span>World Edition</span>
+    <span class="price">No. 321 &bull; One day, one page</span>
+  </div>
+
+  <div class="masthead">
+    <h1>The World Today</h1>
+    <div class="tagline">The day's news from every continent</div>
+  </div>
+
+  <div class="datebar">TUESDAY, <span>17 NOVEMBER 2026</span></div>
+
+  <section class="lead">
+    <div class="kicker">U.S. &ndash; Iran War &bull; The Gulf</div>
+    <h2>U.S. Jets Strike Iran&rsquo;s Qeshm Island</h2>
+    <div class="lead-row">
+      <figure class="lead-art">
+        <svg width="472" height="186" viewBox="0 0 472 186" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#bfd9ea"/><stop offset="1" stop-color="#e8eef2"/>
+            </linearGradient>
+          </defs>
+          <rect width="472" height="186" fill="url(#sky)"/>
+          <ellipse cx="90" cy="34" rx="52" ry="13" fill="#ffffff" opacity="0.9"/>
+          <ellipse cx="330" cy="22" rx="64" ry="12" fill="#ffffff" opacity="0.85"/>
+          <ellipse cx="415" cy="52" rx="40" ry="10" fill="#ffffff" opacity="0.8"/>
+          <!-- far shore -->
+          <path d="M0 118 L120 96 L240 112 L330 98 L472 110 L472 186 L0 186 Z" fill="#8a9a6b"/>
+          <!-- island -->
+          <path d="M300 118 L360 82 L430 108 L472 104 L472 128 L300 128 Z" fill="#6d7f52"/>
+          <rect x="352" y="66" width="10" height="20" fill="#4a4a4a"/>
+          <rect x="344" y="60" width="26" height="8" fill="#4a4a4a"/>
+          <!-- sea -->
+          <path d="M0 128 L472 128 L472 186 L0 186 Z" fill="#2e6da4"/>
+          <path d="M0 142 Q60 136 120 142 T240 142 T360 142 T472 142 L472 186 L0 186 Z" fill="#3577b3"/>
+          <!-- tanker -->
+          <g>
+            <rect x="52" y="140" width="150" height="20" fill="#22252a"/>
+            <rect x="170" y="126" width="26" height="16" fill="#d8d8d8"/>
+            <rect x="60" y="132" width="18" height="10" fill="#c0392b"/>
+            <path d="M96 140 L106 118 L116 140 Z" fill="#e67e22"/>
+            <path d="M103 132 L108 116 L113 132 Z" fill="#f1c40f"/>
+            <ellipse cx="112" cy="106" rx="14" ry="9" fill="#777" opacity="0.75"/>
+            <ellipse cx="122" cy="94" rx="18" ry="11" fill="#888" opacity="0.6"/>
+            <ellipse cx="134" cy="80" rx="22" ry="12" fill="#999" opacity="0.45"/>
+          </g>
+          <!-- jets -->
+          <g fill="#20242b">
+            <path d="M250 44 L296 52 L250 60 L258 52 Z"/>
+            <path d="M300 30 L340 37 L300 44 L307 37 Z"/>
+          </g>
+          <path d="M250 52 L190 58" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+          <path d="M300 37 L248 42" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+          <!-- explosion marker on island -->
+          <circle cx="368" cy="74" r="10" fill="#e67e22"/>
+          <circle cx="368" cy="74" r="5" fill="#f1c40f"/>
+          <text x="14" y="176" font-family="sans-serif" font-size="11" fill="#ffffff" opacity="0.9">STRAIT OF HORMUZ</text>
+          <text x="330" y="124" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">QESHM ISLAND</text>
+        </svg>
+        <figcaption>U.S. warplanes hit a missile launch site on Qeshm Island. Illustration: The World Today</figcaption>
+      </figure>
+      <div class="lead-text">
+        <div class="deck">Missile site hit in retaliation for attacks on U.S. forces in Bahrain, as the nine-month war widens.</div>
+        <p>United States warplanes struck a missile launch site on Qeshm Island on Tuesday, a U.S. military official said, in retaliation for Iran&rsquo;s targeting of American personnel and assets. Mediators Oman and Qatar are seeking to end the fighting.</p>
+        <div class="hormuz"><b>HORMUZ IN FLAMES:</b> a fourth tanker hit a naval mine in 24 hours; Oman evacuated 24 seafarers from the burning gas tanker <i>Tara Gas</i> off Musandam.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <article class="cell">
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><path d="M2 30 Q20 6 38 30" fill="none" stroke="#1d4e89" stroke-width="3"/><line x1="2" y1="30" x2="38" y2="30" stroke="#161616" stroke-width="3"/><line x1="10" y1="30" x2="10" y2="38" stroke="#161616" stroke-width="2"/><line x1="30" y1="30" x2="30" y2="38" stroke="#161616" stroke-width="2"/><line x1="20" y1="18" x2="20" y2="30" stroke="#1d4e89" stroke-width="2"/></svg>
+      <div class="tag">Ukraine</div>
+      <h3>Crimean Bridge hit again</h3>
+      <p>Ukrainian drones and missiles strike the bridge a second day; Russia hits Kyiv bridges in return. A strike on Zaporizhzhia kills 40.</p>
+    </article>
+    <article class="cell">
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><rect x="4" y="8" width="9" height="24" fill="#b22234"/><rect x="15" y="8" width="9" height="24" fill="#de2910"/><rect x="26" y="8" width="9" height="24" fill="#0039a6"/><circle cx="19.5" cy="16" r="2" fill="#ffde00"/></svg>
+      <div class="tag">Diplomacy</div>
+      <h3>Trump&ndash;Xi&ndash;Putin summit set</h3>
+      <p>First-ever three-way summit set for Thursday in Shenzhen, on the APEC sidelines. Trump meets Quad leaders in Manila.</p>
+    </article>
+    <article class="cell">
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="11" fill="#c0392b"/><g stroke="#c0392b" stroke-width="2"><line x1="20" y1="4" x2="20" y2="9"/><line x1="20" y1="31" x2="20" y2="36"/><line x1="4" y1="20" x2="9" y2="20"/><line x1="31" y1="20" x2="36" y2="20"/><line x1="9" y1="9" x2="12.5" y2="12.5"/><line x1="27.5" y1="27.5" x2="31" y2="31"/><line x1="31" y1="9" x2="27.5" y2="12.5"/><line x1="12.5" y1="27.5" x2="9" y2="31"/></g></svg>
+      <div class="tag">Health</div>
+      <h3>U.S. loses measles status</h3>
+      <p>Elimination status lost after 26 years, health officials confirm, with uninterrupted transmission and 5,400+ cases.</p>
+    </article>
+    <article class="cell">
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><polyline points="4,10 14,16 22,14 36,30" fill="none" stroke="#a31621" stroke-width="3"/><polyline points="28,30 36,30 36,22" fill="none" stroke="#a31621" stroke-width="3"/><line x1="4" y1="36" x2="36" y2="36" stroke="#161616" stroke-width="2"/></svg>
+      <div class="tag">Markets</div>
+      <h3>Wall Street falls</h3>
+      <p>AI and tech stocks lead broad losses. Nvidia in focus as ex-chief Huang says he would return if the board asked.</p>
+    </article>
+    <article class="cell">
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><path d="M6 22 L34 14 L30 20 L34 26 L6 26 L12 22 Z" fill="#20242b"/><path d="M6 22 L2 18 L8 20 Z" fill="#20242b"/></svg>
+      <div class="tag">Asia</div>
+      <h3>Japan scrambles jets</h3>
+      <p>Fighter jets sent up after suspected Russian aircraft violate Japanese airspace; Tokyo lodges a strong protest.</p>
+    </article>
+    <article class="cell">
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><path d="M20 4 C24 12 32 14 32 24 A12 12 0 1 1 8 24 C8 16 14 14 16 8 C17 12 20 13 20 13 C19 10 19 7 20 4 Z" fill="#e67e22"/><path d="M20 18 C22 21 25 22 25 26 A5 5 0 1 1 15 26 C15 22 18 21 20 18 Z" fill="#f1c40f"/></svg>
+      <div class="tag">Yemen</div>
+      <h3>Houthis advance</h3>
+      <p>Government forces retreat from the Red Sea coast to defend Aden as the Houthi advance gathers pace.</p>
+    </article>
+  </section>
+
+  <section class="strip">
+    <div class="item">
+      <span class="sq"></span><h4>Gaza aid call</h4>
+      <p>UK, Australia, Canada and Italy urge Israel to open crossings as the UN warns winter rains flood shelters.</p>
+    </div>
+    <div class="item">
+      <span class="sq"></span><h4>COP31 draft deal</h4>
+      <p>Antalya talks call for a faster fossil-fuel phase-out and $120bn a year in climate finance by 2035.</p>
+    </div>
+    <div class="item">
+      <span class="sq"></span><h4>India win U19 thriller</h4>
+      <p>India beat Pakistan by one wicket off the last ball to win the Under-19 Asia Cup final, chasing 338.</p>
+    </div>
+    <div class="item">
+      <span class="sq"></span><h4>Depardieu guilty plea</h4>
+      <p>French actor G&eacute;rard Depardieu pleads guilty to sexual assault in Paris and drops his appeal.</p>
+    </div>
+  </section>
+
+  <section class="strip three">
+    <div class="item">
+      <span class="sq"></span><h4>Apple services restored</h4>
+      <p>Sign-in and App Store disruptions that hit users on Tuesday are resolved, Apple says.</p>
+    </div>
+    <div class="item">
+      <span class="sq"></span><h4>FAA pauses router rollout</h4>
+      <p>Installation halted after last week&rsquo;s nationwide ground stop; cause unclear, not believed a hack.</p>
+    </div>
+    <div class="item">
+      <span class="sq"></span><h4>Dubai air traffic falls</h4>
+      <p>Passenger numbers down 28.1% to 50.4 million in the first nine months of 2026.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span>The World Today &bull; Tuesday, 17 November 2026</span>
+    <span>All stories as reported on the day</span>
+  </div>
+
+</body>
+</html>
