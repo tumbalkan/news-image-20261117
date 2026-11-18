@@ -147,7 +147,16 @@
 
   <section class="grid">
     <article class="cell">
-      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><path d="M2 30 Q20 6 38 30" fill="none" stroke="#1d4e89" stroke-width="3"/><line x1="2" y1="30" x2="38" y2="30" stroke="#161616" stroke-width="3"/><line x1="10" y1="30" x2="10" y2="38" stroke="#161616" stroke-width="2"/><line x1="30" y1="30" x2="30" y2="38" stroke="#161616" stroke-width="2"/><line x1="20" y1="18" x2="20" y2="30" stroke="#1d4e89" stroke-width="2"/></svg>
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40">
+        <!-- Kerch Bridge: long low deck, tall white steel arch, piers, water -->
+        <rect x="1" y="31" width="38" height="7" fill="#4a90c4"/>
+        <path d="M4 34 Q7 33 10 34 T16 34 T22 34 T28 34 T34 34" fill="none" stroke="#8ec1e6" stroke-width="1"/>
+        <g stroke="#5a5a5a" stroke-width="2"><line x1="6" y1="26.5" x2="6" y2="31"/><line x1="14" y1="26.5" x2="14" y2="31"/><line x1="26" y1="26.5" x2="26" y2="31"/><line x1="34" y1="26.5" x2="34" y2="31"/></g>
+        <rect x="1" y="24" width="38" height="2.5" fill="#2b2b2b"/>
+        <path d="M12 24 Q20 -4 28 24" fill="none" stroke="#8a8a8a" stroke-width="4"/>
+        <path d="M12 24 Q20 -4 28 24" fill="none" stroke="#f5f5f5" stroke-width="2.6"/>
+        <g stroke="#c9c9c9" stroke-width="1"><line x1="16" y1="12.5" x2="16" y2="24"/><line x1="20" y1="10" x2="20" y2="24"/><line x1="24" y1="12.5" x2="24" y2="24"/></g>
+      </svg>
       <div class="tag">Ukraine</div>
       <h3>Crimean Bridge hit again</h3>
       <p>Ukrainian drones and missiles strike the bridge a second day; Russia hits Kyiv bridges in return. A strike on Zaporizhzhia kills 40.</p>
@@ -180,13 +189,33 @@
       <p>First-ever three-way summit set for Thursday in Shenzhen, on the APEC sidelines. Trump meets Quad leaders in Manila.</p>
     </article>
     <article class="cell">
-      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="11" fill="#c0392b"/><g stroke="#c0392b" stroke-width="2"><line x1="20" y1="4" x2="20" y2="9"/><line x1="20" y1="31" x2="20" y2="36"/><line x1="4" y1="20" x2="9" y2="20"/><line x1="31" y1="20" x2="36" y2="20"/><line x1="9" y1="9" x2="12.5" y2="12.5"/><line x1="27.5" y1="27.5" x2="31" y2="31"/><line x1="31" y1="9" x2="27.5" y2="12.5"/><line x1="12.5" y1="27.5" x2="9" y2="31"/></g></svg>
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40">
+        <!-- Measles virus: shaded sphere ringed with club-shaped spikes -->
+        <defs>
+          <radialGradient id="vbody" cx="38%" cy="32%" r="75%">
+            <stop offset="0%" stop-color="#c9d8e6"/>
+            <stop offset="55%" stop-color="#7d93a8"/>
+            <stop offset="100%" stop-color="#46586b"/>
+          </radialGradient>
+          <g id="spk"><line x1="20" y1="9.5" x2="20" y2="5" stroke="#d35400" stroke-width="1.5"/><circle cx="20" cy="3.6" r="2" fill="#e74c3c"/></g>
+        </defs>
+        <g><use href="#spk"/><use href="#spk" transform="rotate(30 20 20)"/><use href="#spk" transform="rotate(60 20 20)"/><use href="#spk" transform="rotate(90 20 20)"/><use href="#spk" transform="rotate(120 20 20)"/><use href="#spk" transform="rotate(150 20 20)"/><use href="#spk" transform="rotate(180 20 20)"/><use href="#spk" transform="rotate(210 20 20)"/><use href="#spk" transform="rotate(240 20 20)"/><use href="#spk" transform="rotate(270 20 20)"/><use href="#spk" transform="rotate(300 20 20)"/><use href="#spk" transform="rotate(330 20 20)"/></g>
+        <circle cx="20" cy="20" r="10.5" fill="url(#vbody)"/>
+        <ellipse cx="16.5" cy="15.5" rx="3" ry="2" fill="#ffffff" opacity="0.35" transform="rotate(-25 16.5 15.5)"/>
+      </svg>
       <div class="tag">Health</div>
       <h3>U.S. loses measles status</h3>
       <p>Elimination status lost after 26 years, health officials confirm, with uninterrupted transmission and 5,400+ cases.</p>
     </article>
     <article class="cell">
-      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><polyline points="4,10 14,16 22,14 36,30" fill="none" stroke="#a31621" stroke-width="3"/><polyline points="28,30 36,30 36,22" fill="none" stroke="#a31621" stroke-width="3"/><line x1="4" y1="36" x2="36" y2="36" stroke="#161616" stroke-width="2"/></svg>
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40">
+        <!-- Falling stock chart: five red candles descending, down arrow -->
+        <g stroke="#ddd6c4" stroke-width="1"><line x1="3" y1="10" x2="37" y2="10"/><line x1="3" y1="20" x2="37" y2="20"/><line x1="3" y1="30" x2="37" y2="30"/></g>
+        <g stroke="#8e1f1f" stroke-width="1.2"><line x1="5" y1="7" x2="5" y2="17"/><line x1="11.5" y1="11" x2="11.5" y2="21"/><line x1="18" y1="15" x2="18" y2="25"/><line x1="24.5" y1="19" x2="24.5" y2="29"/><line x1="31" y1="23" x2="31" y2="33"/></g>
+        <g fill="#c0392b"><rect x="3" y="9" width="4" height="6"/><rect x="9.5" y="13" width="4" height="6"/><rect x="16" y="17" width="4" height="6"/><rect x="22.5" y="21" width="4" height="6"/><rect x="29" y="25" width="4" height="6"/></g>
+        <path d="M33.5 30 L39.5 30 L36.5 37 Z" fill="#a31621"/>
+        <line x1="3" y1="37.5" x2="37" y2="37.5" stroke="#161616" stroke-width="1.5"/>
+      </svg>
       <div class="tag">Markets</div>
       <h3>Wall Street falls</h3>
       <p>AI and tech stocks lead broad losses. Nvidia in focus as ex-chief Huang says he would return if the board asked.</p>
@@ -196,13 +225,26 @@
         <path d="M18 16.5 L15 10.5 L12 11 L13 16.5 Z" fill="#4a4f5a"/>
         <path d="M37 20 L30 17.5 Q26 14.5 22 16 L15 17 L11.5 11 L8.5 11.5 L9 17 L5 17.5 L6 21 L11 21.5 L8 27 L12 26.5 L17 21.8 L30 22 Z" fill="#20242b"/>
         <ellipse cx="26" cy="16.3" rx="2.6" ry="1.2" fill="#8fb4d4" transform="rotate(-12 26 16.3)"/>
+        <circle cx="24" cy="19.5" r="1.7" fill="#bc002d"/>
       </svg>
       <div class="tag">Asia</div>
       <h3>Japan scrambles jets</h3>
       <p>Fighter jets sent up after suspected Russian aircraft violate Japanese airspace; Tokyo lodges a strong protest.</p>
     </article>
     <article class="cell">
-      <svg class="icon" width="40" height="40" viewBox="0 0 40 40"><path d="M20 4 C24 12 32 14 32 24 A12 12 0 1 1 8 24 C8 16 14 14 16 8 C17 12 20 13 20 13 C19 10 19 7 20 4 Z" fill="#e67e22"/><path d="M20 18 C22 21 25 22 25 26 A5 5 0 1 1 15 26 C15 22 18 21 20 18 Z" fill="#f1c40f"/></svg>
+      <svg class="icon" width="40" height="40" viewBox="0 0 40 40">
+        <!-- Layered flame: orange glow, orange outer, yellow-orange mid, bright core -->
+        <defs>
+          <radialGradient id="fglow" cx="50%" cy="62%" r="60%">
+            <stop offset="0%" stop-color="#f39c12" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#f39c12" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="20" cy="22" r="17" fill="url(#fglow)"/>
+        <path d="M20 4 C24 12 32 14 32 24 A12 12 0 1 1 8 24 C8 16 14 14 16 8 C17 12 20 13 20 13 C19 10 19 7 20 4 Z" fill="#e67e22"/>
+        <path d="M20 12 C22.5 16 27 17.5 27 23 A7 7 0 1 1 13 23 C13 18 16.5 16.5 18 13 C18.8 15.5 20 16 20 16 C19.5 14.5 19.5 13 20 12 Z" fill="#f39c12"/>
+        <path d="M20 19 C21.5 21.5 24 22.5 24 26 A4 4 0 1 1 16 26 C16 22.5 18.5 21.5 20 19 Z" fill="#fde87a"/>
+      </svg>
       <div class="tag">Yemen</div>
       <h3>Houthis advance</h3>
       <p>Government forces retreat from the Red Sea coast to defend Aden as the Houthi advance gathers pace.</p>
