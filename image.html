@@ -135,6 +135,9 @@
             <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stop-color="#bfd9ea"/><stop offset="1" stop-color="#e8eef2"/>
             </linearGradient>
+            <radialGradient id="tank" cx="0.35" cy="0.3" r="0.95">
+              <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.45" stop-color="#c9cdd2"/><stop offset="0.8" stop-color="#9aa0a7"/><stop offset="1" stop-color="#7d838a"/>
+            </radialGradient>
           </defs>
           <rect width="472" height="186" fill="url(#sky)"/>
           <ellipse cx="90" cy="34" rx="52" ry="13" fill="#ffffff" opacity="0.9"/>
@@ -149,36 +152,59 @@
           <!-- sea -->
           <path d="M0 128 L472 128 L472 186 L0 186 Z" fill="#2e6da4"/>
           <path d="M0 142 Q60 136 120 142 T240 142 T360 142 T472 142 L472 186 L0 186 Z" fill="#3577b3"/>
-          <!-- LPG gas carrier Tara Gas: Moss-type spherical tanks, on fire -->
+          <!-- LPG gas carrier Tara Gas: long sleek hull, Moss-type spherical tanks, on fire -->
           <g>
-            <path d="M48 144 L62 140 L198 140 L202 144 L202 160 L58 160 Q48 158 48 144 Z" fill="#22252a"/>
-            <rect x="52" y="155" width="146" height="3" fill="#7a2a22"/>
-            <g stroke="#9aa0a6" stroke-width="1">
-              <circle cx="82" cy="128" r="15" fill="#e9e9e9"/>
-              <circle cx="117" cy="128" r="15" fill="#e9e9e9"/>
-              <circle cx="152" cy="128" r="15" fill="#e9e9e9"/>
+            <!-- reflection under hull -->
+            <ellipse cx="230" cy="168" rx="190" ry="5" fill="#16324f" opacity="0.25"/>
+            <!-- Moss tanks: metallic spheres seated into the hull -->
+            <g>
+              <circle cx="75" cy="136" r="14" fill="url(#tank)" stroke="#6b7076" stroke-width="0.8"/>
+              <circle cx="130" cy="136" r="14" fill="url(#tank)" stroke="#6b7076" stroke-width="0.8"/>
+              <circle cx="185" cy="136" r="14" fill="url(#tank)" stroke="#6b7076" stroke-width="0.8"/>
+              <circle cx="240" cy="136" r="14" fill="url(#tank)" stroke="#6b7076" stroke-width="0.8"/>
             </g>
-            <g fill="#ffffff" opacity="0.85">
-              <ellipse cx="77" cy="122" rx="4" ry="2.5" transform="rotate(-30 77 122)"/>
-              <ellipse cx="112" cy="122" rx="4" ry="2.5" transform="rotate(-30 112 122)"/>
-              <ellipse cx="147" cy="122" rx="4" ry="2.5" transform="rotate(-30 147 122)"/>
+            <!-- support skirts under each sphere -->
+            <g fill="#3a3e44">
+              <rect x="68" y="135" width="14" height="5"/>
+              <rect x="123" y="135" width="14" height="5"/>
+              <rect x="178" y="135" width="14" height="5"/>
+              <rect x="233" y="135" width="14" height="5"/>
             </g>
-            <g fill="#555a60">
-              <rect x="76" y="138" width="12" height="4"/>
-              <rect x="111" y="138" width="12" height="4"/>
-              <rect x="146" y="138" width="12" height="4"/>
+            <!-- long sleek hull -->
+            <path d="M28 140 L428 140 L428 160 Q428 164 422 164 L34 164 Q22 164 16 154 L28 140 Z" fill="#22252a"/>
+            <rect x="30" y="159" width="396" height="3" fill="#7a2a22"/>
+            <line x1="28" y1="141" x2="428" y2="141" stroke="#565b62" stroke-width="1"/>
+            <!-- deck pipe run -->
+            <line x1="36" y1="137" x2="258" y2="137" stroke="#555a60" stroke-width="1.5"/>
+            <!-- bow wake -->
+            <path d="M18 161 L4 167" stroke="#ffffff" stroke-width="1.2" opacity="0.5"/>
+            <!-- foremast at bow -->
+            <line x1="30" y1="140" x2="30" y2="126" stroke="#33363b" stroke-width="2"/>
+            <line x1="25" y1="130" x2="35" y2="130" stroke="#33363b" stroke-width="1.5"/>
+            <!-- bridge castle at stern -->
+            <g>
+              <rect x="378" y="112" width="42" height="28" fill="#eef0f2" stroke="#9aa0a6" stroke-width="0.8"/>
+              <line x1="378" y1="121" x2="420" y2="121" stroke="#b0b5ba" stroke-width="1"/>
+              <line x1="378" y1="130" x2="420" y2="130" stroke="#b0b5ba" stroke-width="1"/>
+              <g fill="#1d2a38">
+                <rect x="382" y="115" width="4" height="4"/><rect x="389" y="115" width="4" height="4"/><rect x="396" y="115" width="4" height="4"/><rect x="403" y="115" width="4" height="4"/><rect x="410" y="115" width="4" height="4"/>
+                <rect x="382" y="124" width="4" height="4"/><rect x="389" y="124" width="4" height="4"/><rect x="396" y="124" width="4" height="4"/><rect x="403" y="124" width="4" height="4"/><rect x="410" y="124" width="4" height="4"/>
+                <rect x="382" y="133" width="4" height="4"/><rect x="389" y="133" width="4" height="4"/><rect x="396" y="133" width="4" height="4"/><rect x="403" y="133" width="4" height="4"/><rect x="410" y="133" width="4" height="4"/>
+              </g>
+              <rect x="388" y="100" width="10" height="12" fill="#33363b"/>
+              <rect x="388" y="100" width="10" height="4" fill="#c0392b"/>
+              <line x1="410" y1="112" x2="410" y2="102" stroke="#33363b" stroke-width="1.5"/>
+              <rect x="404" y="100" width="12" height="2" fill="#33363b"/>
             </g>
-            <rect x="172" y="118" width="24" height="22" fill="#f0f0f0" stroke="#9aa0a6" stroke-width="0.8"/>
-            <rect x="174" y="122" width="20" height="4" fill="#1d4e89"/>
-            <rect x="174" y="129" width="20" height="3" fill="#1d4e89"/>
-            <rect x="188" y="110" width="7" height="9" fill="#33363b"/>
-            <rect x="188" y="110" width="7" height="3" fill="#c0392b"/>
-            <line x1="58" y1="140" x2="58" y2="126" stroke="#33363b" stroke-width="2"/>
-            <path d="M107 122 Q102 106 111 95 Q114 106 119 97 Q127 108 122 122 Z" fill="#e67e22"/>
-            <path d="M110 122 Q109 112 114 104 Q116 112 119 106 Q121 114 118 122 Z" fill="#f1c40f"/>
-            <ellipse cx="116" cy="88" rx="14" ry="9" fill="#777" opacity="0.75"/>
-            <ellipse cx="126" cy="76" rx="18" ry="11" fill="#888" opacity="0.6"/>
-            <ellipse cx="138" cy="62" rx="22" ry="12" fill="#999" opacity="0.45"/>
+            <!-- fire on deck between 2nd and 3rd tanks -->
+            <path d="M148 140 Q144 122 154 108 Q158 120 164 106 Q170 120 168 140 Z" fill="#e67e22"/>
+            <path d="M152 140 Q151 128 157 118 Q160 128 163 120 Q166 130 164 140 Z" fill="#f39c12"/>
+            <path d="M155 140 Q155 131 159 124 Q162 131 161 140 Z" fill="#f1c40f"/>
+            <!-- smoke drifting up-left -->
+            <ellipse cx="156" cy="96" rx="13" ry="8" fill="#777777" opacity="0.75"/>
+            <ellipse cx="148" cy="82" rx="16" ry="10" fill="#888888" opacity="0.6"/>
+            <ellipse cx="138" cy="68" rx="19" ry="11" fill="#999999" opacity="0.45"/>
+            <ellipse cx="130" cy="58" rx="20" ry="11" fill="#aaaaaa" opacity="0.35"/>
           </g>
           <!-- fighter jets, F/A-18 style side profiles, flying toward Qeshm -->
           <path d="M242 49 L182 55" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
@@ -197,7 +223,7 @@
           <circle cx="368" cy="74" r="10" fill="#e67e22"/>
           <circle cx="368" cy="74" r="5" fill="#f1c40f"/>
           <text x="14" y="176" font-family="sans-serif" font-size="11" fill="#ffffff" opacity="0.9">STRAIT OF HORMUZ</text>
-          <text x="330" y="124" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">QESHM ISLAND</text>
+          <text x="285" y="124" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">QESHM ISLAND</text>
         </svg>
         <figcaption>U.S. warplanes hit a missile launch site on Qeshm Island. Illustration: The World Today</figcaption>
       </figure>
